@@ -1,0 +1,636 @@
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#homepage{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.image-container {
+    max-width: 50%;
+}
+
+.image-container img {
+    box-shadow: rgba(120, 48, 144, 0.2) 0px 10px 15px;
+    border-radius: 50%;
+    margin: 0px 14px;
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.text-container {
+    max-width: 50%;
+    padding: 0px 15px;
+}
+
+.text-container .title,
+.text-container .text {
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0px 0px 10px;
+    letter-spacing: 1.5px;
+}
+
+.text-container .title h3,
+.text-container .title h3 span {
+    font-size: 38px;
+    letter-spacing: 0;
+
+    font-family: 'Pacifico', cursive;
+    color: #783090;
+    font-weight: 400;
+
+}
+
+.text-container .text {
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+#homepage .menu {
+    width: 100%;
+}
+
+#homepage .menu ul {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 40px;
+    padding: 30px 0px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#homepage .menu ul li {
+    position: relative;
+}
+
+#homepage .menu ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    right: 0px;
+    top: 8px;
+    background-color: antiquewhite;
+}
+
+
+#homepage .menu ul li a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #783090;
+    font-weight: 500;
+    min-width: 180px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 50px;
+}
+
+#homepage .menu ul li a:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+body .about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    min-height: 80px;
+    margin-bottom: 40px;
+}
+
+.about-header header{
+    padding: 0px 20px;
+}
+.about-header header .title h4 {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    color: #4b464d;
+}
+
+.about-header nav .menu ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.about-header nav .menu ul li {
+    position: relative;
+}
+
+.about-header nav .menu ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 35%;
+    top: 17px;
+    right: 0;
+    background-color: rgb(255 230 196);
+}
+
+.about-header nav .menu ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: rgb(56, 54, 54);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-header nav .menu ul li .active {
+    color: #e261c7;
+}
+
+.about-header nav .menu ul li a:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.about-header nav .menu ul li a:active {
+    color: rgb(177, 10, 163);
+}
+
+.about-body {
+    padding: 0px;
+}
+#about{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+#about div section .about-me {
+    margin-bottom: 35px;
+    padding-left: 40px;
+    width: 100%;
+}
+
+#about section .about-me .title-heading {
+    margin-bottom: 10px;
+}
+
+#about .skills-person .skills .title{
+    padding-left: 40px;
+    margin-bottom: 10px;
+    width: 75%;
+}
+
+#about section .about-me .title-heading h3,
+#about .skills-person .skills .title h3,
+#about div section .objectives .title h3 {
+    color: #e261c7;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#about .skills-person .skills .title h3{
+    text-align: left;
+}
+
+#about section .about-me .text p {
+    font-size: 17px;
+}
+
+
+
+#about div section .objectives {
+    width: 100%;
+    padding-left: 40px;
+}
+
+#about div section{
+    width: 50%;
+}
+#about div section .objectives .title {
+    padding: 10px 0px
+}
+
+.skills-person{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+/* .skills-person .skills {
+    padding-right: 25px;
+    margin: 0px 40px;
+} */
+
+.skills-person .skills .list-skills ul {
+
+    list-style: none;
+    padding: 0px;
+}
+
+#about .skills-person .skills .list-skills ul li {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    padding: 15px 17px;
+}
+
+/* #about .skills-person .skills .list-skills ul li div {
+    padding: 0px 15px 0px 0px;
+} */
+
+#about .skills-person .skills .list-skills ul li img {
+    width: 40px;
+    margin-right: 12px;
+}
+
+#certificates .title-heading,
+ #experiences .title-heading,
+ #intreview .title-heading
+ {
+ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 38px;
+    margin-bottom: 25px;
+}
+
+#certificates .title-heading img,
+#experiences .title-heading img,
+#intreview .title-heading img{
+    width: 40px;
+    margin-right: 12px;
+    padding-top: 5px;
+}
+#certificates .title-heading h2,
+#experiences .title-heading h2,
+#intreview .title-heading h2{
+    font-size: 25px;
+    font-family: 600;
+    text-align: left;
+    color: #e261c7;
+}
+#certificates .card-container .card ,
+#experiences .card-container .card{
+    box-shadow: 2px 2px 2px 2px #c2b4b4;
+    margin: 40px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    padding: 23px 40px;
+    min-height: 250px;
+    min-width: 50%;
+    border-left-color: #37BC9B;
+
+}
+.card-heading h2 span , 
+.card-heading h6{
+  color: #6c757d;  
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#intreview .contact-container{
+    display: flex;
+    width: 100%;
+
+}
+
+#intreview .form-contact{
+    width: 65%;
+}
+
+.socialmedia-container{
+    margin-right: 25px;
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.socialmedia-container h4{
+    font-size: 22px;
+}
+
+.socialmedia-container div{
+    font-size: 18px;
+}
+
+#intreview form{
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap:wrap;
+    gap:20px;
+    max-width: 660px;
+    margin-left: 25px;
+    /* margin-right: auto; */
+}
+
+.form-input-container{
+    width: calc(50% - 10px);
+}
+.form-input-container input{
+    width:100%;
+    height: 40px;
+    padding:10px;
+}
+.form-input-container textarea{
+    height:100px;
+    max-height: 200px;
+    width:100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding:10px;
+}
+.form-input-container.full-width{
+    width:100%;
+}
+.form-input-container input::placeholder, .form-input-container textarea::placeholder{
+    font-size: 14px;
+}
+form .submit{
+    width: 120px;
+    border: none;
+    border-radius: 50px;
+    height: 45px;
+    background: blue;
+    color: white;
+    margin: 0px 15px;
+}
+/* #certificates .card-school, #experiences .card-experience {
+    margin-bottom: 20px;
+}
+
+#certificates .card-school .title-side ,
+#experiences .card-experience .title-side {
+    padding: 0px 0px 30px 34px;
+}
+
+
+#certificates .card-school .title-side h3 ,
+#experiences .card-experience .title-side h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+    color: #e261c7;
+}
+
+#certificates div h3 img ,
+#experiences .card-experience .title-side h3 img{
+    width: 50px;
+    margin-right: 15px;
+}
+
+.education-card ,.info-experience {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+    height: 200px;
+    margin: 0px 15px 0px 40px;
+    background-color: beige;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px #c2b4b4;
+}
+.info-experience{
+    margin: 0px 15px 0px 30px;
+}
+.education-card .title , .info-experience .title{
+    width: 40%;
+    height: 200px;
+    background-color: #f4aaed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-experience .title{
+    width: 25%;
+}
+
+.education-card .title h6,
+.education-card .title h4 ,
+.info-experience .title h6,
+.info-experience .title h4{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+
+.education-card .title h4 ,
+.info-experience .title h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.education-card .text h3 ,
+.info-experience .text h3{
+    font-size: 25px;
+    padding: 0px 0px 5px 20px;
+    font-weight: 400;
+}
+
+.info-experience .text h3{
+    padding: 0px 0px 20px 20px;
+}
+.education-card .text h4
+{
+    padding-left: 20px;
+    font-size: 15px;
+    color: #888b8f;
+    padding-bottom: 20px;
+}
+
+.education-card .text p ,
+.info-experience .text p {
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+} */
+
+@media only screen and (max-width: 991px) {
+    body .about-header{
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+
+    .info-container {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .text-container .title h3,
+    .text-container .title h3 span {
+        text-align: center;
+    }
+
+    .text-container .text {
+        text-align: center;
+    }
+
+    .image-container {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu ul li:not(:last-child)::after {
+        top: 100%;
+        width: 100%;
+        height: 1px;
+    }
+
+    #about{
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    #about >div {
+        flex-direction: column;
+        
+    }
+
+    #about div section .about-me,
+    #about div section .objectives,
+    #about .skills-person .skills .title{
+        padding-left: 0px;
+    }
+    
+    
+    #about div section .about-me .title h3,
+     #about .skills-person .skills .title h3, 
+     #about div section .objectives .title h3
+     {
+
+        text-align: center;
+    }
+
+    #about div section {
+        min-width: 65%;
+        width: 100%;
+    }
+
+
+    #about div section .about-me .text p ,
+    #about div section .objectives .text p{
+        text-align: center;
+        /* padding-left: 25px; */
+        font-size: 12px;
+}
+
+#about div section .about-me .text ,
+    #about div section .objectives .text{
+        min-width: 20%;
+    }
+
+    #about > div section{
+        margin-bottom: 20px;
+    }
+
+    .skills-person .skills{
+        width: 100%;
+    }
+
+    #about .skills-person .skills .title{
+        width: 100%;
+    }
+
+    .skills-person .skills .list-skills ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #about .skills-person .skills .list-skills ul li {
+        width: 33%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .skills-person .skills .list-skills ul li img{
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    #about .skills-person .skills .list-skills ul li span{
+        line-height: 1.2;
+    }
+
+    /* #certificates .card-school .title-side,
+     #experiences .card-experience .title-side{
+        width: 63%;
+        margin-left: 20px;
+     }
+
+    #certificates .card-school .title-side h3, 
+    #experiences .card-experience .title-side h3
+    {
+        justify-content: center;
+    }
+
+    .education-card, .info-experience{
+        width: 60%;
+    }
+
+    .education-card .title{
+        width: 70%;
+    }
+
+    .education-card .title h4{
+        font-size: 14px;
+    }
+    .education-card .title h6{
+        font-size: 13px;
+    }
+
+    .education-card .text h3{
+        font-size: 20px;
+    }
+
+    .education-card .text h4{
+        font-size: 13px;
+    }
+
+    .education-card .text p{
+        font-size: 12px;
+    }
+
+    .info-experience .title {
+        width: 40%;
+    }
+
+    .info-experience .title h6{
+        font-size: 10px;
+    }
+
+    .info-experience .title h4 {
+        font-size: 14px;
+    } */
+}
+
+
+
+@media only screen and (max-width:575px) {
+    #about .skills-person .skills .list-skills ul li{
+        width:50%;
+    }
+}
